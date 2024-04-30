@@ -5,6 +5,7 @@ import {
 
 import { CTA } from "../components";
 import { experiences, skills } from "../constants";
+import { name } from "../constants";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -15,7 +16,7 @@ const About = () => {
         Hello, I'm{" "}
         <span className='blue-gradient_text font-semibold drop-shadow'>
           {" "}
-          Adrian
+          {name.first}
         </span>{" "}
         👋
       </h1>
