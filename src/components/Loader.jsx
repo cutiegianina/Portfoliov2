@@ -7,11 +7,20 @@ const Loader = () => {
     <Html>
         <div className={'absolute left-0 right-0 z-10 flex items-center justify-center'}>
             <div className={"item"}>
-                <ReactLoader type="bubble-loop" bgColor={color} color={color} size={100} />
+                <CartoonLoader />
+                <ReactLoader type="bubble-loop" bgColor={color} color={color} size={1} />
             </div>
         </div>
     </Html>
   );
 };
+
+import cartoonLoader from '../assets/gifs/cartoon-loader.gif';
+
+const CartoonLoader = () => {
+  return (
+      <img src={cartoonLoader} alt='Loading GIF' width='100' height='50' />
+  );
+}
 
 export default Loader;
