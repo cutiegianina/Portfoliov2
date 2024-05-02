@@ -5,7 +5,7 @@ import { TextureLoader } from 'three';
 import airship from "../assets/3d/airship.glb";
 import me from '../assets/images/pp.jpg';
 
-export function Voyager() {
+export function Voyager({position}) {
   const airshipRef = useRef();
   const moveDirection = useRef(1);
   const texture = useLoader(TextureLoader, me);  // Adjust path as necessary
@@ -37,7 +37,7 @@ export function Voyager() {
 
       // Update position based on direction
       airshipRef.current.position.x += 0.01 * moveDirection.current;
-      airshipRef.current.position.z = 1; // Keep z position constant
+      airshipRef.current.position.z = 0.01; // Keep z position constant
 
       if (moveDirection.current === 1) {
         airshipRef.current.rotation.y = Math.PI / 2; // Facing right
@@ -58,7 +58,7 @@ export function Voyager() {
 
   return (
     // to create and display 3D objects
-    <mesh ref={airshipRef} position={[2, 0, 0]} scale={.01}>
+    <mesh ref={airshipRef} position={position} scale={.01}>
       // use the primitive element when you want to directly embed a complex 3D
       model or scene
       <boxGeometry args={[1, 1, 1]} />
