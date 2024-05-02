@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { ducen, vpi } from "../assets/images";
 import {
     car,
     contact,
@@ -111,57 +111,31 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Associate Software Engineer",
+        company_name: "Ducen Infotek Inc.",
+        icon: ducen,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "August 2022 - August 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Developing and maintaining web applications using Angular, .Net Core and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Junior Software Developer",
+        company_name: "VeritasPay Philippines Inc.",
+        icon: vpi,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "September 2023 - May 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Spearheaded the development of a .Net Core Web API from scratch.",
+            "Implemented industry standard Software Architecture using Clean Architecture and CQRS pattern.",
+            "Implemented authentication & authorization of API using HMAC Authentication filter & middleware.",
+            "Setup dependencies, packages needed eg. Entity Framework Core, Dapper, DbContext, MediatR etc...",
         ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+    }
 ];
 
 export const socialLinks = [
@@ -186,44 +160,30 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        name: 'API provider using ExpressJS & MongoDB',
+        description: 'Exploring ExpressJS since I wanted to create an API provider with lightweight server powering it.',
+        link: 'https://github.com/cutiegianina/pirates',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
+        name: 'Clean Architecture in .Net Core and Angular with JWT Authentication',
+        description: 'I showcased here how a clean architecture .Net Core application should be.',
+        link: 'https://github.com/cutiegianina/Clean-Architecture-in-.Net-Core',
     },
     {
         iconUrl: car,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        name: '3D Portfolio using React',
+        description: '3D portfolio which contains details about me as a Full-Stack Software Engineer.',
+        link: 'https://github.com/cutiegianina/Portfoliov2',
     },
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+        name: 'Beach-front properties for sale',
+        description: 'I built this website when I was still a student.',
+        link: 'https://github.com/cutiegianina/samalbeachline',
     }
 ];
 

@@ -12,9 +12,6 @@ export function Voyager({position}) {
   // Load the 3D model and animations from the provided GLTF file
   const { scene, animations } = useGLTF(airship);
 
-  // Get access to the animations for the bird
-  const { actions } = useAnimations(animations, airshipRef);
-
   // Play the "Take 001" animation when the component mounts
   // Note: Animation names can be found on the Sketchfab website where the 3D model is hosted.
   useEffect(() => {
@@ -52,6 +49,7 @@ export function Voyager({position}) {
       // Check if the model has reached either boundary and reverse direction if it has
       if (airshipRef.current.position.x > maxBoundary || airshipRef.current.position.x < minBoundary) {
         moveDirection.current *= -1; // Reverse the direction
+
       }
     }
   });

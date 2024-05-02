@@ -23,8 +23,8 @@ const About = () => {
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          Software Engineer based in the Philippines, specializing in technical
-          education through hands-on learning and building applications.
+          a Full-Stack Software Engineer based in the Philippines, specializing in software development
+          through hands-on learning and building applications from scratch.
         </p>
       </div>
 
