@@ -16,7 +16,7 @@ export function Voyager({position}) {
   // Note: Animation names can be found on the Sketchfab website where the 3D model is hosted.
   useEffect(() => {
     texture.center.set(0.5, 0.5);
-    texture.offset.set(0, 0.1);
+    texture.offset.set(0, 0.12);
     texture.rotation = Math.PI / 2;
     scene.traverse((child) => {
       if (child.isMesh && child.name == 'polySurface253_lambert6_0') {
