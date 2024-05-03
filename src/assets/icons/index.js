@@ -26,6 +26,14 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import angular from './angular.jpg';
+import dotnetcore from './dotnetcore.svg';
+import mssql from './mssql.svg';
+import mysql from './mysql.svg';
+import blazor from './blazor.svg';
+import gitlab from './gitlab.svg';
+import csharp from './csharp.svg';
+import bootstrap from './bootstrap.svg';
 
 export {
     css,
@@ -55,5 +63,13 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    angular,
+    dotnetcore,
+    mssql,
+    mysql,
+    blazor,
+    gitlab,
+    csharp,
+    bootstrap
 }

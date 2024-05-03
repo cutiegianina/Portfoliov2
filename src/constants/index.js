@@ -23,13 +23,31 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    dotnetcore,
+    angular,
+    mssql,
+    mysql,
+    gitlab,
+    blazor,
+    csharp,
+    bootstrap
 } from "../assets/icons";
 
 export const skills = [
     {
+        imageUrl: html,
+        name: "HTML",
+        type: "Frontend",
+    },
+    {
         imageUrl: css,
         name: "CSS",
+        type: "Frontend",
+    },
+    {
+        imageUrl: javascript,
+        name: "JavaScript",
         type: "Frontend",
     },
     {
@@ -48,29 +66,19 @@ export const skills = [
         type: "Version Control",
     },
     {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
+        imageUrl: gitlab,
+        name: "Gitlab",
+        type: "Version Control",
     },
     {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Frontend",
+        imageUrl: angular,
+        name: "Angular",
+        type: "Fronted",
     },
     {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-    {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
+        imageUrl: dotnetcore,
+        name: ".Net Core",
+        type: "Backend",
     },
     {
         imageUrl: nextjs,
@@ -88,23 +96,43 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
+        imageUrl: mssql,
+        name: "MSSQL",
+        type: "RDBMS",
     },
     {
-        imageUrl: sass,
-        name: "Sass",
+        imageUrl: mongodb,
+        name: "MongoDB",
+        type: "Database",
+    },
+    {
+        imageUrl: mysql,
+        name: "MySQL",
+        type: "Frontend",
+    },
+    {
+        imageUrl: csharp,
+        name: 'C#',
+        type: 'Backend'
+    },
+    {
+        imageUrl: typescript,
+        name: "TypeScript",
+        type: "Frontend",
+    },
+    {
+        imageUrl: blazor,
+        name: "Blazor",
+        type: "Frontend",
+    },
+    {
+        imageUrl: bootstrap,
+        name: "Bootstrap",
         type: "Frontend",
     },
     {
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
-        type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
         type: "Frontend",
     }
 ];
