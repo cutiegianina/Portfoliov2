@@ -23,6 +23,11 @@ export function Voyager({position}) {
         child.material.map = texture;
         child.material.needsUpdate = true;
       }
+      
+      if (child.isMesh && (child.name == 'polySurface263_red_wood_0' ||
+                           child.name == 'pTorus21_red_wood_0')) {
+                             child.parent.remove(child);
+                           }
     });
       
   }, [scene, texture]);
