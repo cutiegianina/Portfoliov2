@@ -1,7 +1,9 @@
 import { useEffect, useRef } from "react";
-import { useGLTF, useAnimations } from "@react-three/drei";
-
+import { useGLTF, useAnimations, useTexture } from "@react-three/drei";
+import { TextureLoader } from 'three';
+import { useLoader  } from "@react-three/fiber";
 import planeScene from "../assets/3d/plane.glb";
+import phFlag from '../assets/images/ph-flag.jpg';
 
 // 3D Model from: https://sketchfab.com/3d-models/stylized-ww1-plane-c4edeb0e410f46e8a4db320879f0a1db
 export function Plane({ isRotating, ...props }) {
@@ -10,7 +12,7 @@ export function Plane({ isRotating, ...props }) {
   const { scene, animations } = useGLTF(planeScene);
   // Get animation actions associated with the plane
   const { actions } = useAnimations(animations, ref);
-
+  const phFlagTexture = useLoader(TextureLoader, phFlag);
   // Use an effect to control the plane's animation based on 'isRotating'
   // Note: Animation names can be found on the Sketchfab website where the 3D model is hosted.
   useEffect(() => {
@@ -19,6 +21,13 @@ export function Plane({ isRotating, ...props }) {
     } else {
       actions["Take 001"].stop();
     }
+
+    scene.traverse(child => {
+      if (child.isMesh && child.name == 'polySurface201_pasted__lambert2_0') {
+        child.material.map = phFlagTexture;
+        child.material.needsUpdate = true;
+      }
+    });
   }, [actions, isRotating]);
 
   return (

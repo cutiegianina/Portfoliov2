@@ -9,6 +9,7 @@ export function Voyager({position}) {
   const airshipRef = useRef();
   const moveDirection = useRef(1);
   const texture = useLoader(TextureLoader, me);  // Adjust path as necessary
+
   // Load the 3D model and animations from the provided GLTF file
   const { scene, animations } = useGLTF(airship);
 
@@ -28,6 +29,10 @@ export function Voyager({position}) {
                            child.name == 'pTorus21_red_wood_0')) {
                              child.parent.remove(child);
                            }
+
+      if (child.isMesh && child.name == 'pTorus3_crate_wood_0') {
+        child.parent.remove(child);
+      }
     });
       
   }, [scene, texture]);
