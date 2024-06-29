@@ -32,7 +32,7 @@ const About = () => {
         <h3 className='subhead-text'>Tech Stacks</h3>
 
         <h1 className='mt-5 text-2xl'>Front-end</h1>
-        <div className='mt-4 flex flex-wrap gap-12'>
+        <div className='mt-4 flex flex-wrap gap-12 justify-center md:justify-start'>
           {skills.map(skill => {
             if (skill.type == 'Frontend') {
               return (
@@ -74,7 +74,7 @@ const About = () => {
         </div>
 
         <h1 className='mt-5 text-2xl'>Database</h1>
-        <div className='mt-4 flex flex-wrap gap-12'>
+        <div className='mt-4 flex flex-wrap gap-12 justify-center md:justify-start'>
           {skills.map(skill => {
             if (skill.type == 'Database') {
               return (
@@ -95,7 +95,7 @@ const About = () => {
         </div>
 
         <h1 className='mt-5 text-2xl'>Version Control</h1>
-        <div className='mt-4 flex flex-wrap gap-12'>
+        <div className='mt-4 flex flex-wrap gap-12 justify-center md:justify-start'>
           {skills.map(skill => {
             if (skill.type == 'Version Control') {
               return (
