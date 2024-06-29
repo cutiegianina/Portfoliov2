@@ -165,7 +165,7 @@ export const experiences = [
         ],
     },
     {
-        title: "Backend Developer",
+        title: "Software Developer",
         company_name: "Flat Planet Philippines Inc.",
         icon: flatplanet,
         iconBg: "#accbe1",
