@@ -36,7 +36,7 @@ const About = () => {
           {skills.map(skill => {
             if (skill.type == 'Frontend') {
               return (
-              <div className='block-container w-20 h-20 ml-0 ml:ml-5 flex justify-center' key={skill.name}>
+              <div className='block-container w-20 h-20 ml-0 md:ml-5 flex justify-center' key={skill.name}>
                 <span className='absolute z-10 text-xs'>{skill.name}</span>
                 <div className='btn-back rounded-xl' />
                 <div className='btn-front rounded-xl flex justify-center items-center'>
