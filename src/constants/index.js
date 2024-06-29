@@ -1,4 +1,4 @@
-import { ducen, vpi } from "../assets/images";
+import { ducen, vpi, flatplanet } from "../assets/images";
 import {
     car,
     contact,
@@ -51,11 +51,6 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
-    },
-    {
         imageUrl: git,
         name: "Git",
         type: "Version Control",
@@ -73,11 +68,16 @@ export const skills = [
     {
         imageUrl: angular,
         name: "Angular",
-        type: "Fronted",
+        type: "Frontend",
     },
     {
         imageUrl: dotnetcore,
         name: ".Net Core",
+        type: "Backend",
+    },
+    {
+        imageUrl: express,
+        name: "Express.js",
         type: "Backend",
     },
     {
@@ -98,7 +98,7 @@ export const skills = [
     {
         imageUrl: mssql,
         name: "MSSQL",
-        type: "RDBMS",
+        type: "Database",
     },
     {
         imageUrl: mongodb,
@@ -108,7 +108,7 @@ export const skills = [
     {
         imageUrl: mysql,
         name: "MySQL",
-        type: "Frontend",
+        type: "Database",
     },
     {
         imageUrl: csharp,
@@ -162,6 +162,19 @@ export const experiences = [
             "Implemented industry standard Software Architecture using Clean Architecture and CQRS pattern.",
             "Implemented authentication & authorization of API using HMAC Authentication filter & middleware.",
             "Setup dependencies, packages needed eg. Entity Framework Core, Dapper, DbContext, MediatR etc...",
+        ],
+    },
+    {
+        title: "Backend Developer",
+        company_name: "Flat Planet Philippines Inc.",
+        icon: flatplanet,
+        iconBg: "#accbe1",
+        date: "May 2024 - Present",
+        points: [
+            "Developed Microservices using Azure Functions in .Net.",
+            "Learned Azure Cloud Services.",
+            "Created CI/CD pipelines in Azure DevOps",        
+            "Learned Microsoft Power Platforms like Dynamics365 and Power Apps.",
         ],
     }
 ];
