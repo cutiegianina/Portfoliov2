@@ -20,7 +20,8 @@ const Footer = () => {
               <img
                 src={link.iconUrl}
                 alt={link.name}
-                className='w-6 h-6 object-contain'
+                className='w-6 h-6 object-contain hover:scale-150'
+                title={link.name}
               />
             </Link>
           ))}

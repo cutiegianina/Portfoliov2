@@ -1,6 +1,11 @@
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  let navITems = [
+    { label: 'About', route: '/about' },
+    { label: 'Projects', route: '/projects' }
+  ];
+  
   return (
     <header className='header'>
       <NavLink to='/'>
@@ -9,12 +14,14 @@ const Navbar = () => {
         </label>
       </NavLink>
       <nav className='flex text-lg gap-7 font-medium'>
-        <NavLink to='/about' className={({ isActive }) => isActive ? "text-blue-600" : "text-black" }>
-          About
-        </NavLink>
-        <NavLink to='/projects' className={({ isActive }) => isActive ? "text-blue-600" : "text-black"}>
-          Projects
-        </NavLink>
+        {navITems.map(navItem => {
+          return (
+            <>
+            <NavLink to={navItem.route} className={`${({ isActive }) => isActive ? "text-blue-600" : "text-black"} hover:text-blue-400`}>
+              {navItem.label}
+            </NavLink>  
+          </>
+        )})}
       </nav>
     </header>
   );
