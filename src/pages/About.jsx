@@ -42,7 +42,7 @@ const About = () => {
       {techStacksContent.map(tech =>  {
         return (
         <div className='py-4 bg-gray-100 rounded-xl shadow-xl mb-4' key={tech.label}>
-          <h1 className='px-4 mt-5 text-2xl'>{tech.label}</h1>
+          <h1 className='px-4 text-2xl'>{tech.label}</h1>
           <div className='mt-4 flex flex-wrap gap-4 md:gap-12 justify-center md:justify-start'>
             {skills.map(skill => {
               if (skill.type == (tech.skillType ?? tech.label)) {
