@@ -34,6 +34,8 @@ import blazor from './blazor.svg';
 import gitlab from './gitlab.svg';
 import csharp from './csharp.svg';
 import bootstrap from './bootstrap.svg';
+import azuredevops from './azure-devops.svg';
+import azure from './azure.svg';
 
 export {
     css,
@@ -71,5 +73,7 @@ export {
     blazor,
     gitlab,
     csharp,
-    bootstrap
+    bootstrap,
+    azuredevops,
+    azure
 }

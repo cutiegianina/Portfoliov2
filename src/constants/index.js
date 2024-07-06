@@ -31,7 +31,9 @@ import {
     gitlab,
     blazor,
     csharp,
-    bootstrap
+    bootstrap,
+    azuredevops,
+    azure
 } from "../assets/icons";
 
 export const skills = [
@@ -134,6 +136,15 @@ export const skills = [
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
         type: "Frontend",
+    },
+    {
+        imageUrl: azuredevops,
+        name: 'Azure DevOps',
+        type: 'CI/CD'
+    },
+    {   imageUrl: azure,
+        name: 'Microsoft Azure',
+        type: 'Cloud Computing'
     }
 ];
 

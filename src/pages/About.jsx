@@ -19,11 +19,14 @@ const About = () => {
     { label: 'Tech Stacks', name: techStacks },
     { label: 'Work Experience', name: workExperience } 
   ];
+  
   const techStacksContent = [
     { label: 'Front-end', skillType: 'Frontend' },
     { label: 'Back-end', skillType: 'Backend' },
     { label: 'Database' },
-    { label: 'Version Control' }
+    { label: 'Version Control' },
+    { label: 'CI/CD' },
+    { label: 'Cloud Computing' }
   ];
 
   const changeTab = (tab) => {
@@ -38,14 +41,14 @@ const About = () => {
     <div className='py-4'>
       {techStacksContent.map(tech =>  {
         return (
-        <div key={tech.label}>
+        <div className='p-4 bg-gray-100 rounded-xl shadow-xl mb-4' key={tech.label}>
           <h1 className='mt-5 text-2xl'>{tech.label}</h1>
           <div className='mt-4 flex flex-wrap gap-12 justify-center md:justify-start'>
             {skills.map(skill => {
               if (skill.type == (tech.skillType ?? tech.label)) {
                 return (
                 <div className='block-container w-20 h-20 ml-0 md:ml-5 flex justify-center' key={skill.name}>
-                  <span className='absolute z-10 text-xs'>{skill.name}</span>
+                  <span className='absolute z-10 text-xs whitespace-nowrap'>{skill.name}</span>
                   <div className='btn-back rounded-xl' />
                   <div className='btn-front rounded-xl flex justify-center items-center'>
                     <img
