@@ -16,11 +16,10 @@ const Navbar = () => {
       <nav className='flex text-lg gap-7 font-medium'>
         {navITems.map(navItem => {
           return (
-            <>
-            <NavLink to={navItem.route} className={`${({ isActive }) => isActive ? "text-blue-600" : "text-black"} hover:text-blue-400`}>
+            <NavLink to={navItem.route} className={({ isActive }) => isActive ?
+              "text-blue-600" : "text-black hover:text-blue-400"} key={navItem.route}>
               {navItem.label}
             </NavLink>  
-          </>
         )})}
       </nav>
     </header>

@@ -7,7 +7,7 @@ import { CTA } from "../components";
 import { experiences, skills } from "../constants";
 import { name } from "../constants";
 import { useState } from "react";
-
+import React from 'react';
 import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
@@ -38,7 +38,7 @@ const About = () => {
     <div className='py-4'>
       {techStacksContent.map(tech =>  {
         return (
-        <div>
+        <div key={tech.label}>
           <h1 className='mt-5 text-2xl'>{tech.label}</h1>
           <div className='mt-4 flex flex-wrap gap-12 justify-center md:justify-start'>
             {skills.map(skill => {
@@ -147,16 +147,15 @@ const About = () => {
         <div className='flex flex-row justify-evenly'>
           {tabs.map((tab, index) => {
             return (
-          <>
-            <button type='button' className={`${((!tabState.name && index === 0) || tabState.name == tab.name) ? 'text-red-400' : 'hover:text-red-400'} subhead-text`} onClick={() => changeTab({name: tab.name, active: true})}>
-                {tab.label}
-            </button>
-            {(index === 0) && (<span className='text-gray-500 flex items-baseline text-lg'>|</span>)
-            }
-          </>)
+              <React.Fragment key={index}>
+                <button type='button' className={`${((!tabState.name && index === 0) || tabState.name == tab.name) ? 'text-red-400' : 'hover:text-red-400'} subhead-text`} onClick={() => changeTab({name: tab.name, active: true})}>
+                    {tab.label}
+                </button>
+                {(index === 0) && (<span className='text-gray-500 flex items-baseline text-lg' key={`separator-${index}`}>|</span>)}
+              </React.Fragment>
+            )
           })}
         </div>
-
 
         {tabContent}
       </div>
