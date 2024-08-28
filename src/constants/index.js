@@ -33,7 +33,8 @@ import {
     csharp,
     bootstrap,
     azuredevops,
-    azure
+    azure,
+    docker
 } from "../assets/icons";
 
 export const skills = [
@@ -145,6 +146,11 @@ export const skills = [
     {   imageUrl: azure,
         name: 'Microsoft Azure',
         type: 'Cloud Computing'
+    },
+    {
+        imageUrl: docker,
+        name: 'Docker',
+        type: 'Containerization'
     }
 ];
 

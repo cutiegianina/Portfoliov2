@@ -26,7 +26,8 @@ const About = () => {
     { label: 'Database' },
     { label: 'Version Control' },
     { label: 'CI/CD' },
-    { label: 'Cloud Computing' }
+    { label: 'Cloud Computing' },
+    { label: 'Containerization' }
   ];
 
   const changeTab = (tab) => {

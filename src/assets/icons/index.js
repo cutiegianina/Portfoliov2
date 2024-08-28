@@ -36,6 +36,7 @@ import csharp from './csharp.svg';
 import bootstrap from './bootstrap.svg';
 import azuredevops from './azure-devops.svg';
 import azure from './azure.svg';
+import docker from './docker.svg';
 
 export {
     css,
@@ -75,5 +76,6 @@ export {
     csharp,
     bootstrap,
     azuredevops,
-    azure
+    azure,
+    docker
 }
